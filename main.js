@@ -19,6 +19,6 @@ var timerId = setInterval(function () {
 function handler(event) {
     paint.style.marginLeft = event.clientX - +paint.style.width.slice(0, -2) / 2;
     paint.style.marginTop = event.clientY - +paint.style.width.slice(0, -2) / 2;
-    paint.style.width = (+paint.style.width.slice(0, -2) + 5) + "px";
+    paint.style.width = (+paint.style.width.slice(0, -2) + 1) + "px";
 }
 myBody.addEventListener('mousemove', handler);
